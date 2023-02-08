@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Island+Moments&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #ff7e01;
+  --secondary-color: #faa935;
+  --heading-color: #0b2727;
+  --text-color: #6e7074;
+  --font-name: "Montserrat", sans-serif;
+  --subtitle-font-name: "Island Moments", cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-name);
+}
+
+section {
+  padding: 50px 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+}
+
+a {
+  text-decoration: none !important;
+  color: unset;
+}
+ul {
+  list-style: none;
+}
+li {
+  list-style: none;
+}
+
+.profile__logo {
+  width: 10%;
+}
+.navbar {
+  height: 70px !important;
+  background-color: #ced2da;
+}
+.profile__logo img {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.trending__img img {
+  margin-top: 20px;
+  /* margin-right: 200px; */
+}
+
+/* category section******************************* */
+.category {
+  margin: 10% 10% 5% 10%;
+}
+
+.title {
+  color: black;
+  font-weight: 600;
+  font-size: 35px;
+  margin-top: 50px;
+}
+
+.filter {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+}
+
+.filter span {
+  margin: 0 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+i {
+  font-size: 25px;
+  color: #0084ff;
+  cursor: pointer;
+}
+
+.categories {
+  width: auto;
+  height: 100px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.categories span {
+  margin: 8px 5px;
+  padding: 6px 14px;
+  border: 1px solid #0084ff;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.categories span:hover {
+  background-color: #0084ff;
+}
+.categories span:hover a {
+  /* background-color: #0084ff; */
+  color: white;
+}
+.categories .active a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.active {
+  color: white;
+  background-color: #0084ff;
+}
+.cards-empty-message {
+  color: black;
+  text-align: center;
+  margin-left: 350px;
+}
+
+/* card Section */
+
+
+
+
+.heading h1 {
+  font-size: 18px;
+  text-align: left;
+  margin: 0;
+  margin-top: 10px;
+  text-overflow: ellipsis;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+}
+
+.author {
+  padding-top: 10px;
+  color: #0096ff;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+.date {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Raleway", sans-serif;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.43;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 10px 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.card__img img{
+  width: 100%;
+  height: 200px;
+}
+
+.card{
+  margin-bottom: 2rem !important;
+}
+
+
+
+@media only screen and (max-width:800px){
+  .categories{
+    margin-bottom: 2rem;
+  }
+  .categories span{
+    padding: 3px 6px;
+
+  }
+
+  
+}
+
+@media only screen and (max-width:500px){
+  .trending__img{
+    display: none;
+  }
+  .categories{
+    padding: 0;
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+  .categories span{
+
+    margin: 2px 3px;
+
+  }
+  .categories span a{
+    font-size: 12px;
+  }
+}
